@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/estilo_jogo_da_velha.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+
+    <div class="menu_jogadores">
+        <section class="jogador1">
+            <h2>Jogador 1</h2>
+            <input type="text" id="nomeJogador1" placeholder="Insira seu nome" required>
+            <button class="ajustar" id="pronto1">Pronto</button>
+
+        </section>
+
+
+        <section class="jogador2">
+            <h2>Jogador 2</h2>
+
+            <input type="text" id="nomeJogador2" placeholder="Insira seu nome" required>
+            <button class="ajustar" id="pronto2">Pronto</button>
+        </section>
+    </div>
+
+    <div class="comecar"> </div>
+    <div class="indica_vez_jogador">
+        <p id="acima_tabuleiro"></p>
+    </div>
+
+
+    <div class="container_jogo">
+        <div class="container">
+            <main>
+
+                <div class="tabuleiro">
+
+                    <div class="linha1">
+                        <button id="area00"></button> <button id="area01"></button> <button id="area02"></button>
+                    </div>
+
+                    <div class="linha2">
+                        <button id="area10"></button> <button id="area11"></button> <button id="area12"></button>
+                    </div>
+
+                    <div class="linha3">
+                        <button id="area20"></button> <button id="area21"></button> <button id="area22"></button>
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+
+
+        <div class="container_direita_tabuleiro">
+
+            <div class="exibe_placar">
+                <p id="placar"></p>
+            </div>
+
+            <div class="indica_vencedor">
+                <p id="abaixo_tabuleiro"></p>
+            </div>
+            <div class="exibe_revanche"><button id="comecar_revanche">Revanche!</button></div>
+            <div class="exibe_finalizar"><a href="jogo_da_velha.html">Finalizar Partida</a></div>
+        </div>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

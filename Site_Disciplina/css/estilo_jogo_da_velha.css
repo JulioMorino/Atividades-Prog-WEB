@@ -1,0 +1,245 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(58, 58, 199);
+
+}
+h1{
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+}
+
+
+
+.menu_jogadores{
+    display: flex;
+    width: 100%;
+    
+
+}
+
+input{
+    background-color: rgb(58, 58, 199);
+    color: white;
+    border: 0.3em;
+    border-color: white;
+    border-style:ridge;
+    border-radius: 3em;
+    width: 25em;
+    padding: 0.5em;
+    
+}
+input::placeholder{
+    color: rgb(102, 6, 102);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.jogador1{
+    width: 50%;
+    height: 15em;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-right: 5%;
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center;
+
+}
+#pronto1{
+    height: 1.3em;
+    margin-top: 1em;
+    border-style: none;
+    border-radius: 0.1em;
+    width: 10em;
+    color: rgb(58, 58, 199);
+    font-size: 2em;
+    background-image: url(../img/loading.gif);
+    background-size: contain;
+    background-repeat: no-repeat;   /*Alinhando as imagens de Circulo ou X, que somente aparecem quando o usuario clicar em alguma area do tabuleiro*/
+    background-position: right;
+    background-position-x: 8em;
+    background-size: 1em;
+}
+#pronto1:hover{
+    font-weight: bold;
+}
+
+.jogador2{
+    width: 50%;
+    height: 15em;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-right: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center;
+    
+}
+#pronto2{
+    height: 1.3em;
+    margin-top: 1em;
+    border-style: none;
+    border-radius: 0.1em;
+    width: 10em;
+    color: rgb(58, 58, 199);
+    font-size: 2em;
+    background-image: url(../img/loading.gif);
+    background-size: contain;
+    background-repeat: no-repeat;   /*Alinhando as imagens de Circulo ou X, que somente aparecem quando o usuario clicar em alguma area do tabuleiro*/
+    background-position: right;
+    background-position-x: 8em;
+    background-size: 1em;
+}
+#pronto2:hover{
+    font-weight: bold;
+}
+
+main{
+    text-align: center;
+}
+
+
+#comecar_partida{
+    border: 10px solid purple;
+    border-radius: 20px;
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    width: 5em;
+    padding: 10px;
+    margin-top: 1em;
+}
+
+#comecar_partida:hover{
+    opacity: 0.8;
+}
+
+.comecar{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+
+
+/**********TABULEIRO******/
+#acima_tabuleiro {
+    margin: 3em 0em 0em 0em;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5em;
+    font-weight:200;
+    color: antiquewhite;
+}
+.container_jogo{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container{
+    display: none;
+    width: 70%;
+}
+.container_direita_tabuleiro{
+    width: 30%;
+    margin-right: 2.2em;
+}
+main{
+    width: 75%;
+    display: flex;
+}
+
+.tabuleiro{
+    margin: 2em 5em 5em 5em;
+    display: none;
+    
+}
+
+.tabuleiro button{
+    padding: 5em;
+    margin: 1em;
+    position: relative;
+    border: 0;
+    background-size: contain;
+    background-repeat: no-repeat;   /*Alinhando as imagens de Circulo ou X, que somente aparecem quando o usuario clicar em alguma area do tabuleiro*/
+    background-position: center;
+}
+
+.exibe_placar {
+    width: 25%;
+    white-space: nowrap;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+    margin-left: 3em;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center;
+}
+
+.indica_vencedor{
+    color: rgb(248, 248, 72);
+    font-size: 2.5em;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.exibe_revanche, .exibe_finalizar{
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    margin-right: 3.5em;
+    
+}
+
+
+#comecar_revanche{
+    display: none;
+    border: 0.2em solid rgb(143, 3, 143);
+    border-radius: 10em;
+    padding: 1em;
+    background-color: rgb(143, 3, 143);
+    color: white;
+    letter-spacing: 0.3em;
+    font-size: 1.7em;
+    
+}
+
+
+#comecar_revanche:hover{
+    opacity: 80%;
+    font-size: 1.8em;
+}
+
+.exibe_finalizar a{
+    color: white;
+    font-weight: bold;
+    margin-top: 2em;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: none;
+}
+
+.exibe_finalizar a:hover{
+    text-decoration: underline;
+}

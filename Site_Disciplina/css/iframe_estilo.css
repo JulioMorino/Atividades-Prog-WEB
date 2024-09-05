@@ -1,12 +1,28 @@
-
-.formatacao p{
+.formatacao p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
 }
+
 p {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    
+
     text-align: center;
     padding: 40px 40px 10px 40px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(191, 19, 19);
+
+}
+
+li {
+    margin-top: 20px;
+}
+
+span {
+    margin-bottom: 40px;
+    font-size: 20px;
 }

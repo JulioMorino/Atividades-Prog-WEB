@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="css/estilo_cadastro.css">
+</head>
+
+<body>
+    <nav>
+        <a href="cadastro.html">Página Inicial</a>
+
+        <a href="alunos_cadastrados.html">Alunos Cadastrados</a>
+    </nav>
+    <section>
+        <div class="area_logo">
+            <img src="img/unicamp-logo-branco.png" alt="logo da UNICAMP">
+        </div>
+        <h1>Cadastro do Aluno</h1>
+
+        <p>Preencha os campos abaixo e clique em "Cadastrar":</p>
+
+        <!-- nome, RA, sexo, idade, endereço, telefone e email-->
+        <form action="">
+            <div class="info" id="info_nome">
+                <label for="nome_aluno">Nome:</label>
+                <input type="text" id="nome_aluno" required>
+            </div>
+
+
+            <div class="info" id="info_ra">
+                <label for="ra_aluno">RA (apenas números):</label>
+                <input type="number" id="ra_aluno" step="any">
+            </div>
+
+
+            <div class="info" id="info_sexo">
+                <p>Sexo:</p>
+                <div class="campo_masculino">
+                    <input type="radio" id="masculino" name="Sexo" value="Masculino" required>
+                    <label for="masculino">Masculino</label>
+                </div>
+
+                <div class="campo_feminino">
+                    <input type="radio" id="feminino" name="Sexo" value="Feminino" required>
+                    <label for="feminino">Feminino </label>
+                </div>
+            </div>
+
+
+            <div class="info" id="info_idade">
+                <label for="idade">Idade: </label>
+                <input type="number" name="Idade" id="idade" step="1" min="0" max="100" required>
+            </div>
+
+
+            <div class="info" id="info_endereco">
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="Endereco" id="endereco" required>
+            </div>
+
+
+            <div class="info" id="info_telefone">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="Telefone" id="telefone" placeholder="(DDD)XXXXX-XXXX" required>
+            </div>
+
+            <div class="info" id="info_email">
+                <label for="email">Email:</label>
+                <input type="email" name="Email" id="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            <div class="info">
+                <input type="submit" value="Cadastrar" id="botao_cadastrar">
+            </div>
+        </form>
+
+    </section>
+</body>
+
+</html>
